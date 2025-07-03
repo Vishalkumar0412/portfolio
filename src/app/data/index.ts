@@ -1,10 +1,4 @@
-export const navItems = [
-  {name:"Home" , link:"#"},
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
-];
+
 
 
 
@@ -82,7 +76,7 @@ export const projects = [
     des: "My personal portfolio website",
     img: "/portfolio.png",
     github: 'https://github.com/Vishalkumar0412/portfolio.git',
-    link: "https://true-feedback-kohl.vercel.app",
+    link: "https://iamvishalkumar.in",
   },
   {
     id: 2,

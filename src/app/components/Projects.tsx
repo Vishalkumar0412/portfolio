@@ -2,18 +2,18 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import { FaGithub } from "react-icons/fa";
 import { MdLaptopChromebook } from "react-icons/md";
-import { projects } from "@/data";
+import { projects } from "@/app/data";
 import Image from "next/image";
 
 const Projects = () => {
   return (
-    <div>
+    <section id='projects'>
       <div>
         <h2 className="uppercase text-3xl text-white font-bold my-2">
           My Projects
         </h2>
       </div>
-      <div className="grid gap-5 md:grid-cols-2 grid-cols-1">
+      <div className="grid gap-5 sm:grid-cols-2 grid-cols-1">
         {projects.map(({ id, title, des, img, github, link }) => (
           <CardContainer className="inter-var" key={id}>
             <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
@@ -77,7 +77,7 @@ const Projects = () => {
           </CardContainer>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

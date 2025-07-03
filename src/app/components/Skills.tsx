@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import { motion, easeInOut } from "framer-motion";
-import { skills } from "@/data";
+import { skills } from "@/app/data";
 import SkillCard from "./SkillCard";
 
 // Parent container animation
