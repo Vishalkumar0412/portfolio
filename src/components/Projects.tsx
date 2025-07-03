@@ -3,6 +3,7 @@ import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import { FaGithub } from "react-icons/fa";
 import { MdLaptopChromebook } from "react-icons/md";
 import { projects } from "@/data";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -30,7 +31,7 @@ const Projects = () => {
                {des}
               </CardItem>
               <CardItem translateZ="100" className="w-full mt-4">
-                <img
+                <Image
                   src={img}
                   height="1000"
                   width="1000"
@@ -40,17 +41,22 @@ const Projects = () => {
               </CardItem>
               <div className="flex justify-between items-center mt-20">
                {
-                link && ( <CardItem
-                  translateZ={20}
-                  as="a"
-                  href={link}
-                  target="__blank"
-                  className="px-4 py-2 rounded-xl text-sm flex justify-evenly items-center gap-2 font-normal dark:text-white"
-                >
-                  
-                  <MdLaptopChromebook />
-                  Live →
-                </CardItem>)
+                link && (
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 rounded-xl text-sm flex justify-evenly items-center gap-2 font-normal dark:text-white"
+                  >
+                    <CardItem
+                      translateZ={20}
+                      as="div"
+                    >
+                      <MdLaptopChromebook />
+                      Live →
+                    </CardItem>
+                  </a>
+                )
                }
                 <CardItem
                   translateZ={20}

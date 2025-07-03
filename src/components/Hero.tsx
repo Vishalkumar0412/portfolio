@@ -1,16 +1,18 @@
+"use client"
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
-import { cn } from "@/lib/utils";
+import {motion} from "motion/react"
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import HeroButton from "./ui/HeroButton";
 import Grid from "./Grid";
 import { FloatingDock } from "./ui/floating-dock";
-import { Linkedin ,Github} from "lucide-react";
+
 import { CiLinkedin } from "react-icons/ci";
 import { FaDiscord, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
-import { ContainerTextFlip } from "./ui/container-text-flip";
+
+
 
 const Hero = () => {
 
@@ -59,7 +61,7 @@ const Hero = () => {
       
 
         <div className="flex justify-center relative my-20 z-10">
-          <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] text-center space-y-6">
+          <motion.div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] text-center space-y-6">
           
 
             <TextGenerateEffect
@@ -72,7 +74,7 @@ const Hero = () => {
             <HeroButton/>
             <FloatingDock items={socialMedia}/>
 
-          </div>
+          </motion.div>
         </div>
       </div>
           <Grid/>

@@ -1,8 +1,14 @@
-"use client"
+"use client";
 import React from "react";
-import {motion} from "motion/react";
-
-const SkillCard = ({ skill }) => {
+import { motion } from "motion/react";
+import Image from "next/image";
+type Skill = {
+  id: number;
+  title: string;
+  icon: string;
+  alt: string;
+};
+const SkillCard = ({ skill }: { skill:Skill}) => {
   return (
     <motion.div
       whileHover={{ scale: 1.1 }}
@@ -15,7 +21,14 @@ const SkillCard = ({ skill }) => {
       }}
     >
       <div>
-        <img src={skill.icon} alt={skill.alt} className="h-10" />
+        <Image
+          src={skill.icon}
+          alt={skill.alt}
+          width={0}
+          height={0}
+          className="h-10 w-auto" // ✅ Tailwind auto-width
+          style={{  width: "auto" }}
+        />{" "}
       </div>
       <div>
         <span>{skill.title}</span>

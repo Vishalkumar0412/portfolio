@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import { cn } from "@/lib/utils";
-import { useState } from "react";
+import Image from "next/image";
 
 
 export const BentoGrid = ({
@@ -45,22 +45,7 @@ export const BentoGridItem = ({
   const leftLists = ["ReactJS", "Express", "Typescript"];
   const rightLists = ["Node.JS", "Next.JS", ""];
 
-  const [copied, setCopied] = useState(false);
-
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
-  const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-  };
+  // const [copied, setCopied] = useState(false);
 
   return (
     <div
@@ -80,32 +65,35 @@ export const BentoGridItem = ({
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
-          {img && (
-            <img
+          {img ? (
+            <Image
+              alt="Grid Item"
+              className={cn(imgClassName, "object-cover object-center")}
               src={img}
-              alt={img}
-              className={cn(imgClassName, "object-cover object-center ")}
+              height={0}
+              width={0}
             />
-          )}
+          ) : null}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
-            } `}
+          className={`absolute right-0 -bottom-5 ${
+            id === 5 && "w-full opacity-80"
+          } `}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={spareImg}
-              //   width={220}
+              height={0}
+              width={0}
               className="object-cover object-center w-full h-full"
             />
           )}
         </div>
         {id === 6 && (
           // add background animation , remove the p tag
-         
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
-         
+
+          <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
         )}
 
         <div
@@ -127,7 +115,6 @@ export const BentoGridItem = ({
           </div>
 
           {/* for the github 3d globe */}
-          
 
           {/* Tech stack list div */}
           {id === 3 && (
@@ -170,10 +157,7 @@ export const BentoGridItem = ({
                   }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-            
               </div>
-
-            
             </div>
           )}
         </div>

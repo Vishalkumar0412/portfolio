@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, easeInOut } from "framer-motion";
 import { skills } from "@/data";
 import SkillCard from "./SkillCard";
 
@@ -17,7 +17,7 @@ const containerVariants = {
 // Each SkillCard animation
 const cardVariants = {
   hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: [0.32, 0.23, 0.4, 0.9] } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: easeInOut } },
 };
 
 const Skills = () => {
