@@ -81,7 +81,7 @@ export const projects = [
     title: "Portfolio",
     des: "My personal portfolio website",
     img: "/portfolio.png",
-    github: 'https://github.com/Vishalkumar0412/true-feedback.git',
+    github: 'https://github.com/Vishalkumar0412/portfolio.git',
     link: "https://true-feedback-kohl.vercel.app",
   },
   {
@@ -110,10 +110,10 @@ export const projects = [
   },
   {
     id: 5,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "",
-    github: '',
+    title: "Medistore App",
+    des: "A pharmacy management system",
+    img: "/medistore.png",
+    github: 'https://github.com/Vishalkumar0412/medistore_app.git',
     link: "https://github.com/adrianhajdin?tab=repositories",
   },
   

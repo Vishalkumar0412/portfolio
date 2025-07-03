@@ -3,6 +3,7 @@ import Skills from "@/components/Skills";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Projects from "@/components/Projects";
 import { navItems } from "@/data";
+import { TimelineDemo } from "@/components/Timeline";
 
 
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero/>
       <Skills/>
       <Projects/>
+      <TimelineDemo/>
     </div>
 
    </main>
