@@ -55,10 +55,7 @@ const FloatingDockMobile = ({
               <motion.div
                 key={item.title}
                 initial={{ opacity: 0, y: 10 }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                }}
+                animate={{ opacity: 1, y: 0 }}
                 exit={{
                   opacity: 0,
                   y: 10,
@@ -80,15 +77,25 @@ const FloatingDockMobile = ({
           </motion.div>
         )}
       </AnimatePresence>
-      <button
-        onClick={() => setOpen(!open)}
-        className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-800"
-      >
-        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
-      </button>
+
+      {/* Label + Button container */}
+      <div className="flex flex-col items-center space-y-1">
+        <span className="text-xs text-gray-500 dark:text-neutral-400">
+          Click here to contact me
+        </span>
+        <button
+          onClick={() => setOpen(!open)}
+          className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-800"
+        >
+          <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
+        </button>
+      </div>
     </div>
   );
 };
+
+
+
 
 const FloatingDockDesktop = ({
   items,

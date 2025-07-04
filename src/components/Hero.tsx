@@ -45,7 +45,7 @@ const Hero = () => {
         <div className="flex flex-col items-center gap-2 justify-center relative my-20 z-10">
           <motion.div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] text-center space-y-6">
             <TextGenerateEffect
-              className="text-[45px]  md:text-4xl lg:text-6xl font-bold"
+              className="text-[35px]  md:text-4xl lg:text-6xl font-bold"
               words="Hi I'm Vishal Kumar — ready to contribute as your next Software Engineer."
             />
             <div className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 space-y-1">

@@ -1,14 +1,15 @@
-import Hero from "@/app/components/Hero";
-import Skills from "@/app/components/Skills";
-import { FloatingNav } from "@/app/components/ui/FloatingNavbar";
-import Projects from "@/app/components/Projects";
+import Hero from "@/components/Hero";
+import Skills from "@/components/Skills";
+import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import Projects from "@/components/Projects";
 ;
-import { TimelineDemo } from "@/app/components/Timeline";
+import { TimelineDemo } from "@/components/Timeline";
 import { FaHome, FaInfo } from "react-icons/fa";
 import { GrProjects } from "react-icons/gr";
 import { IoCallSharp } from "react-icons/io5";
-import { ContactForm } from "./components/ContactFrom";
-import Footer from "./components/Footer";
+import { ContactForm } from "../components/ContactFrom";
+import Footer from "../components/Footer";
+import { Experience } from "../components/Experience";
 
 
 const navItems = [
@@ -25,6 +26,7 @@ export default function Home() {
       <FloatingNav navItems={navItems}/>
       <Hero/>
       <Skills/>
+      <Experience/>
       <TimelineDemo/>
       <Projects/>
       <ContactForm />
