@@ -21,7 +21,7 @@ const navItems = [
 export default function Home() {
   return (
    <main className="relative bg-black flex justify-center items-center mx-auto sm:px-10 px-5 overflow-x-hidden ">
-    <div className="max-w-7xl w-full">
+    <div className="max-w-7xl w-full  hide-scrollbar overflow-auto">
       <FloatingNav navItems={navItems}/>
       <Hero/>
       <Skills/>

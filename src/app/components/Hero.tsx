@@ -46,7 +46,7 @@ const Hero = () => {
           <motion.div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] text-center space-y-6">
             <TextGenerateEffect
               className="text-[45px]  md:text-4xl lg:text-6xl font-bold"
-              words="Hi, I'm Vishal Kumar — a Software Developer"
+              words="Hi I'm Vishal Kumar — ready to contribute as your next Software Engineer."
             />
             <div className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 space-y-1">
               <p>
