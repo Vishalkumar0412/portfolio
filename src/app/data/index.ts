@@ -108,7 +108,7 @@ export const projects = [
     title: "Medistore App",
     des: "A pharmacy management system",
     img: "/medistore.png",
-    github: 'https://github.com/Vishalkumar0412/medistore_app.git',
+    github: '',
     link: "https://github.com/adrianhajdin?tab=repositories",
   },
   

@@ -8,7 +8,7 @@ export function TimelineDemo() {
       content: (
         <div>
          <h3 className="text-xl md:text-4xl text-white font-bold my-3">
-            Masters of computer applications
+            Master's of computer applications
          </h3>
           <div className="grid grid-cols-1 gap-4">
             
@@ -29,7 +29,7 @@ export function TimelineDemo() {
       content: (
         <div>
          <h3 className="text-xl md:text-4xl text-white font-bold my-3">
-            Bacholors of computer applications
+            Bachelor's of computer applications
          </h3>
           <div className="grid grid-cols-1 gap-4">
             
