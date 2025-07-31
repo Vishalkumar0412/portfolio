@@ -71,16 +71,25 @@ export const gridItems = [
 
 export const projects = [
  
+
   {
     id: 1,
+    title: "ResumeX",
+    des: "Intelligent Resume Evaluation Tool",
+    img: "/resumeX.png",
+    github: 'https://github.com/Vishalkumar0412/resume-reviewer.git',
+    // link: "https://iamvishalkumar.in",
+  },
+    {
+    id: 2,
     title: "Portfolio",
     des: "My personal portfolio website",
     img: "/portfolio.png",
     github: 'https://github.com/Vishalkumar0412/portfolio.git',
-    link: "https://iamvishalkumar.in",
+    link: "",
   },
   {
-    id: 2,
+    id: 3,
     title: "True Feedback",
     des: "True Feedback is an anonymous feedback app that collects honest input and provides AI-generated insights for growth.",
     img: "/TrueFeedback.png",
@@ -88,7 +97,7 @@ export const projects = [
     link: "https://true-feedback-kohl.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
     title: "Broodl",
     des: "Broodl is a mood tracking app that helps you log emotions, identify patterns, and gain AI-powered insights for better mental well-being.Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
     img: "/Broodl.png",
@@ -96,7 +105,7 @@ export const projects = [
     link: "https://broodl-nine.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "ZapPay ",
     des: "A end to end payment app. with transaction history",
     img: "/zappay.png",
@@ -104,7 +113,7 @@ export const projects = [
     link: "",
   },
   {
-    id: 5,
+    id:6,
     title: "Medistore App",
     des: "A pharmacy management system",
     img: "/medistore.png",
