@@ -78,7 +78,7 @@ export const projects = [
     des: "Intelligent Resume Evaluation Tool",
     img: "/resumeX.png",
     github: 'https://github.com/Vishalkumar0412/resume-reviewer.git',
-    // link: "https://iamvishalkumar.in",
+    link: "https://resume-reviewer-three.vercel.app",
   },
     {
     id: 2,
