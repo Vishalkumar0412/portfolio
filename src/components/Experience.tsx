@@ -7,10 +7,17 @@ import * as Accordion  from "@radix-ui/react-accordion";
 const experiences = [
   {
     title: "Full Stack Developer Intern",
-    company: "Tabtrips",
-    time: "April 2025 – Present",
+    company: "Acculizien Tech pvt ltd",
+    time: "july 2025 – Present",
     description:
-      "Currently interning at Tabtrips, where I contribute to building scalable web applications using Next.js, Node.js, Express, and MongoDB. My work includes API development, frontend UI design, and integrating third-party services.",
+      "Currently interning at Acculizien Tech, where I contribute to building scalable web soical media using React.js, Node.js, Express, and Mysql. My work includes API development, frontend UI design, and integrating third-party services.",
+  },
+  {
+    title: "Full Stack Developer Intern",
+    company: "Tabtrips",
+    time: "April 2025 – June 2025",
+    description:
+      "At Tabtrips, where I contribute to building scalable web applications using Next.js, Node.js, Express, and MongoDB. My work includes API development, frontend UI design, and integrating third-party services.",
   },
   // Add more experiences here if needed
 ];
