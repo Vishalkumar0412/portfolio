@@ -87,7 +87,7 @@ export const projects = [
     des: "Intelligent Resume Evaluation Tool",
     img: "/resumeX.png",
     github: 'https://github.com/Vishalkumar0412/resume-reviewer.git',
-    link: "https://resume-reviewer-three.vercel.app",
+    link: "https://resumex.iamvishalkumar.in",
   },
     {
     id: 2,
@@ -95,7 +95,7 @@ export const projects = [
     des: "My personal portfolio website",
     img: "/portfolio.png",
     github: 'https://github.com/Vishalkumar0412/portfolio.git',
-    link: "",
+    link: "/",
   },
   {
     id: 3,
@@ -126,8 +126,8 @@ export const projects = [
     title: "Medistore App",
     des: "A pharmacy management system",
     img: "/medistore.png",
-    github: '',
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    github: 'https://github.com/Vishalkumar0412/medistore_app.git',
+    link: "https://medistore-mocha.vercel.app",
   },
   
 ];
